@@ -2,7 +2,7 @@
 
 ## Conteúdos
 - [ ] 1. Manipulação do DOM
-- [ ] 2. Eventos JavaScript
+- [ ] 2. Eventos
 - [ ] 3. Assincronismo e promises (promessas)
 - [ ] 4. Funções de callback (funções de retorno)
 
