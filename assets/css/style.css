@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+  font-family: Roboto, Helvetica, Arial;
+  color: #3A3A3A;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main div {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+
+#red {
+  border-color: red;
+}
+#green {
+  border-color: green;
+}
+#blue {
+  border-color: blue;
+}
