@@ -3,18 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="shortcut icon" href="assets/img/icon.png" />
   <title>Color Mixer 🎨</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
 </head>
 <body>
   <main>
     <h1>Color Mixer 🎨</h1>
-    <div></div>
+    <div id="color"></div>
+    <p>Movimente os controles para obter a cor desejada.</p>
     <form>
-      <input id="red" type="number" step="1" min="0" max="255" value="255">
-      <input id="green" type="number" step="1" min="0" max="255" value="255">
-      <input id="blue" type="number" step="1" min="0" max="255" value="255">
+      <div class="redDiv">
+        <label for="red"></label>
+        <input id="red" type="range" value="240" step="1" min="0" max="255">
+      </div>
+      <div class="greenDiv">
+        <label for="green"></label>
+        <input id="green" type="range" value="240" step="1" min="0" max="255">
+      </div>
+      <div class="blueDiv">
+        <label for="blue"></label>
+        <input id="blue" type="range" value="240" step="1" min="0" max="255">            
+      </div>
     </form>
   </main>
   <script src="assets/js/script.js"></script>

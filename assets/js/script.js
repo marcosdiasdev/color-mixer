@@ -1,11 +1,20 @@
-const box = document.querySelector("main div");
+const colorDiv = document.querySelector('#color');
 const red = document.querySelector("#red");
 const green = document.querySelector("#green");
 const blue = document.querySelector("#blue");
 
+const redDivLabel = document.querySelector(".redDiv label");
+const greenDivLabel = document.querySelector(".greenDiv label");
+const blueDivLabel = document.querySelector(".blueDiv label");
+
 function changeColor() {
-  box.style.backgroundColor = `rgb(${red.value},${green.value},${blue.value})`;
-  
+
+  colorDiv.style.backgroundColor = `rgb(${red.value},${green.value},${blue.value})`;
+
+  redDivLabel.textContent = red.value;
+  greenDivLabel.textContent = green.value;
+  blueDivLabel.textContent = blue.value;
+
   let hexRed = Number(red.value).toString(16);
   let hexGreen = Number(green.value).toString(16);
   let hexBlue = Number(blue.value).toString(16);
@@ -20,18 +29,36 @@ function changeColor() {
     hexBlue = "0" + hexBlue;
   }
 
-  box.textContent = `#${hexRed}${hexGreen}${hexBlue}`;
+  colorDiv.textContent = `#${hexRed}${hexGreen}${hexBlue}`;
+
+  if(Number(red.value) + Number(green.value) + Number(blue.value) < 380) {
+    colorDiv.classList.add("dark");
+  } else {
+    colorDiv.classList.remove("dark");
+  }
 }
 
 function copyToClipboard() {
-  navigator.clipboard.writeText(box.textContent).then(() => {
-    console.log(`Copiado para a área de transferência: ${box.textContent}`)
+  navigator.clipboard.writeText(colorDiv.textContent).then(() => {
+    console.log(`Valor copiado: ${colorDiv.textContent}`);
+  }).catch(error => {
+    console.error(`Erro ao acessar área de transferência: ${JSON.stringify(error)}`);
   });
 }
 
-box.onclick = copyToClipboard;
-red.onchange = changeColor;
-green.onchange = changeColor;
-blue.onchange = changeColor;
+async function asyncCopyToClipboard() {
+  try {
+    await navigator.clipboard.writeText(colorDiv.textContent);
+    console.log(`Valor copiado: ${colorDiv.textContent}`);    
+  } catch (error) {
+    console.error(`Erro ao acessar área de transferência: ${JSON.stringify(error)}`);
+  }
+}
+
+colorDiv.addEventListener('click', asyncCopyToClipboard);
+
+red.oninput = changeColor;
+green.oninput = changeColor;
+blue.oninput = changeColor;
 
 changeColor();

@@ -5,7 +5,7 @@
 
 body {
   background-color: #FAFAFA;
-  font-family: Roboto, Helvetica, Arial;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   color: #3A3A3A;
 }
 
@@ -17,9 +17,15 @@ main {
   height: 100vh;
 }
 
-main div {
-  width: 200px;
-  height: 200px;
+main p {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#color {
+  width: 300px;
+  height: 300px;
   background-color: white;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
@@ -30,19 +36,43 @@ main div {
   align-items: center;
 }
 
-input {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #E0E0E0;
-  border-radius: 5px;
+.dark {
+  color: white;
 }
 
-#red {
-  border-color: red;
+form div {
+  padding: 15px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
 }
-#green {
-  border-color: green;
+
+form div label {
+  position: absolute;
+  top: -10px;
+  background: #FAFAFA;
+  padding: 0 3px;
 }
-#blue {
-  border-color: blue;
+
+form div input {
+  width: 90%;
+}
+
+.redDiv {
+  border-color: #FF5252;
+  color: #FF5252;
+}
+
+.greenDiv {
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+.blueDiv {
+  border-color: #448AFF;
+  color: #448AFF;
 }
