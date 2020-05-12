@@ -4,7 +4,7 @@ Projeto desenvolvido para a disciplina de Desenvolvimento de Sistemas para Inter
 
 O objetivo deste projeto é explorar de maneira prática alguns dos principais recursos da linguagem JavaScript.
 
-Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html).
+Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html) e a [playlist](https://www.youtube.com/playlist?list=PLSZgalrKR-DfBr5suNtXvheQddOadIy_l) no Youtube.
 
 ## Conteúdos
 - [X] 1. Manipulação do DOM
@@ -12,7 +12,6 @@ Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html)
 - [X] 3. Funções de callback (funções de retorno)
 - [X] 4. Assincronismo e promises (promessas)
 - [ ] 5. Utilizar armazenamento local para registrar paletas de cores
-
 
 ## Desafios
 - [X] Impedir que o usuário utilize valores menores que 0 ou maiores do que 255
