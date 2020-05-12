@@ -1,5 +1,11 @@
 # Color Mixer 🎨
 
+Projeto desenvolvido para a disciplina de Desenvolvimento de Sistemas para Internet, da terceira série do Curso Técnico em Informática, do Campus Dianópolis do Instituto Federal do Tocantins.
+
+O objetivo deste projeto é explorar de maneira prática alguns dos principais recursos da linguagem JavaScript.
+
+Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html).
+
 ## Conteúdos
 - [X] 1. Manipulação do DOM
 - [X] 2. Eventos
@@ -13,8 +19,10 @@
 - [ ] Fazer com que uma cor aleatória seja exibida a cada vez que a página for carregada
 
 ## Referências
-- `input type="number"`
+- `<input type="number">`
   - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number
+- `<input type="range">`
+  - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input/range
 - Eventos  
   - https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events
   - https://developer.mozilla.org/pt-BR/docs/Web/Events
@@ -22,3 +30,7 @@
   - https://developer.mozilla.org/pt-BR/docs/Glossario/Callback_function
 - Template strings
   - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings
+- Funcões assíncronas (e async/await):
+  - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/funcoes_assincronas
+- Usando promises (promessas):
+  - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Usando_promises
