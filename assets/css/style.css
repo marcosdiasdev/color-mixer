@@ -17,6 +17,10 @@ main {
   min-height: 100vh;
 }
 
+main h1 {
+  margin-top: 30px;
+}
+
 main p {
   width: 300px;
   text-align: center;
@@ -75,4 +79,37 @@ form div input {
 .blueDiv {
   border-color: #448AFF;
   color: #448AFF;
+}
+
+/* Paleta de cores */
+
+#palette {
+  height: 60px;
+  width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#palette div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+}
+
+#clearBtn {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  color: white;
+  background: #448AFF;
 }

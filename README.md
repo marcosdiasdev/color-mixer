@@ -11,7 +11,7 @@ Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html)
 - [X] 2. Eventos
 - [X] 3. Funções de callback (funções de retorno)
 - [X] 4. Assincronismo e promises (promessas)
-- [ ] 5. Utilizar armazenamento local para registrar paletas de cores
+- [x] 5. Utilizar armazenamento local para registrar paletas de cores
 
 ## Desafios
 - [X] Impedir que o usuário utilize valores menores que 0 ou maiores do que 255
@@ -33,3 +33,8 @@ Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html)
   - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/funcoes_assincronas
 - Usando promises (promessas):
   - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Usando_promises
+- Armazenamento local (localStorage)
+  - https://developer.mozilla.org/pt-BR/docs/Web/API/Window/Window.localStorage
+  - https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
+- Criação de elementos (createElement)
+  - https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement

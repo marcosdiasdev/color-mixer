@@ -7,6 +7,34 @@ const redDivLabel = document.querySelector(".redDiv label");
 const greenDivLabel = document.querySelector(".greenDiv label");
 const blueDivLabel = document.querySelector(".blueDiv label");
 
+const clearBtn = document.querySelector('#clearBtn');
+const palette = document.querySelector('#palette');
+let colors = JSON.parse(localStorage.getItem('colors')) || [];
+
+for(color of colors) {
+  createColorBox(color);
+}
+
+function addToLocalStorage() {
+  if(colors.length < 5) {
+    colors.push(colorDiv.textContent);
+    localStorage.setItem('colors', JSON.stringify(colors));
+    createColorBox(colorDiv.textContent);
+  }
+}
+
+function createColorBox(color) {
+  const div = document.createElement('div');
+  div.style.backgroundColor = color;
+  palette.appendChild(div);
+}
+
+function clearPalette() {
+  localStorage.removeItem('colors');
+  colors = [];
+  palette.innerHTML = '';
+}
+
 function changeColor() {
 
   colorDiv.style.backgroundColor = `rgb(${red.value},${green.value},${blue.value})`;
@@ -56,6 +84,8 @@ async function asyncCopyToClipboard() {
 }
 
 colorDiv.addEventListener('click', asyncCopyToClipboard);
+colorDiv.addEventListener('click', addToLocalStorage);
+clearBtn.addEventListener('click', clearPalette);
 
 red.oninput = changeColor;
 green.oninput = changeColor;
