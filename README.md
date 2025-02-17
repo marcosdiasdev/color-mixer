@@ -4,7 +4,7 @@ Projeto desenvolvido para a disciplina de Desenvolvimento de Sistemas para Inter
 
 O objetivo deste projeto é explorar de maneira prática alguns dos principais recursos da linguagem JavaScript.
 
-Acesse a [demonstração](https://timarcosdias.github.io/color-mixer/index.html) e a [playlist](https://www.youtube.com/playlist?list=PLSZgalrKR-DfBr5suNtXvheQddOadIy_l) no Youtube.
+Acesse a [demonstração](https://marcosdiasdev.github.io/color-mixer/index.html) e a [playlist](https://www.youtube.com/playlist?list=PLSZgalrKR-DfBr5suNtXvheQddOadIy_l) no Youtube.
 
 ## Conteúdos
 - [X] 1. Manipulação do DOM
